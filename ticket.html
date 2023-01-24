@@ -50,13 +50,26 @@
       
     <div class=" d-flex flex-row ">
       <!--sidebar-->
-      <nav class="navbar navbar-light bg-dark" style="height: 100vh; flex:1 1 0;color:white;">
+     
+          
+        <ul class="nav flex-column bg-dark" style="height: 100vh; flex:1 1 0;color:white;">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
           
           
           
-          
-          
-      </nav>
+      
 
       <section style="flex:15 1 0; background-color: rgb(185, 156, 212);">
 
@@ -99,9 +112,6 @@
               </div>
 
             </div>
-
-
-
 
 
 
@@ -191,10 +201,7 @@
 
 
 
-
-
-
-            <table class="table table-dark table-striped" style="">
+            <table class="table table-dark table-striped"  id="tabella2" style="">
               <thead>
                 <tr>
                   <th scope="col">#</th>
@@ -237,6 +244,21 @@
           </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+            
+          </div>
+
+
           
       </section>
 
@@ -258,6 +280,18 @@
     -->
   </body>
 
-      <script>var dataTable = new DataTable("#tabella");</script>
+      <script>
+        var dataTable = new DataTable("#tabella");
+
+        var dataTable_2= new DataTable("#tabella2");
+
+        dataTable.import({
+          type:"json",
+          data:""
+        });
+      </script>
+        
+    
+
 
 </html>
