@@ -53,15 +53,21 @@
       <!--sidebar-->
      
           
-        <ul class="nav flex-column ">
+        <ul class="nav flex-column">
           <li class="nav-item" >
-            <a class="nav-link active" href="#"><i class="fas fa-clipboard-list"></i><br>giornata<br>lavorativa</a>
+            <a class="nav-link active" href="#"><i class="fas fa-clipboard-list fa-3x"></i><br>giornata<br>lavorativa</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><a class="nav-link active" href="#"><i class="fas fa-clipboard-list"></i><br>Miei dati</a>
+            <a class="nav-link" href="#"><a class="nav-link active" href="#"><i class="fas fa-clipboard-list fa-3x"></i><br>Miei dati</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><a class="nav-link active" href="#"><i class="fas fa-clipboard-list"></i><br>presenze</a>
+          <li class="nav-item" >
+            <a class="nav-link" href="#"><a class="nav-link active" href="#"><i class="fas fa-clipboard-list fa-3x"></i><br>Presenze</a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link" href="#"><a class="nav-link active" href="#"><i class="fas fa-clipboard-list fa-3x"></i><br>Tickets</a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link" href="#"><a class="nav-link active" href="#"><i class="fas fa-clipboard-list fa-3x"></i><br>Trasferte</a>
           </li>
           
         </ul>
@@ -70,23 +76,17 @@
           
       
 
-      <section class="section">
-
-        
-
-        
-
-
+      <section class="section"style="margin:20px">
 
           <div class="container-fluid">
             <div class="d-flex justify-content-between">
-              <h1 class="p-2 bd-highlight">Flex item 1</h1>
-              <button class="p-3 bd-highlight rounded" >+</button>
+              <h3 class="p-2 bd-highlight" ><strong>TICKET GRUPPI AZIENDALI</strong></h3>
+              <button class="p-3 bd-highlight rounded" ><i class="fas fa-plus"></i></button>
             </div>
            
             <hr>
             <br>
-
+            <label>Aziende:</label>
             <select class="form-select" style="height:50% ; width:15%;"aria-label="Default select example">
               <option selected>Open this select menu</option>
               <option value="1">One</option>
@@ -95,30 +95,41 @@
             </select>
             <br>
             
-
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-              <label class="form-check-label" for="inlineCheckbox1">1</label>
+              <label class="form-check-label" for="inlineCheckbox1"><strong>Aperto</strong></label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1"><strong>Attesa utente</strong></label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1"><strong>Chiuso</strong></label>
             </div>
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-              <label class="form-check-label" for="inlineCheckbox2">2</label>
+              <label class="form-check-label" for="inlineCheckbox2"><strong>In elaborazione</strong></label>
             </div>
 
 
-
-
-
-
-
-
-            <table class="table table-dark table-striped"  id="tabella" style="">
+            <table class="table table-dark table-striped"  id="tabella" >
               <thead>
                 <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">First</th>
-                  <th scope="col">Last</th>
-                  <th scope="col">Handle</th>
+                  <th scope="col">ID</th>
+                  <th scope="col">Messaggi nuovi</th>
+                  <th scope="col">TICKET RIF</th>
+                  <th scope="col">AZIENDA</th>
+                  <th scope="col">GESTORE</th>
+                  <th scope="col">INIZIO</th>
+                  <th scope="col">DESCRIZIONE</th>
+                  <th scope="col">INIZIO</th>
+                  <th scope="col">DESCRIZIONE</th>
+                  <th scope="col">COMUNE</th>
+                  <th scope="col">STADIO</th>
+                  <th scope="col">TIPOLOGIA</th>
+                  <th scope="col">PROBLEMA PRODOTTO</th>
+                  <th scope="col">DATA</th>
                 </tr>
               </thead>
                 <tbody>
@@ -127,17 +138,49 @@
                     <td>Mark</td>
                     <td>Otto</td>
                     <td>@mdo</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    
+                    
                   </tr>
                   <tr>
                     <th scope="row">2</th>
                     <td>Jacob</td>
                     <td>Thornton</td>
                     <td>@fat</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                   </tr>
                   <tr>
                     <th scope="row">3</th>
                     <td colspan="2">Larry the Bird</td>
                     <td>@twitter</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                   </tr>
                 </tbody>
               </table>
@@ -150,35 +193,35 @@
           
           <div class="container-fluid">
             <div class="d-flex justify-content-between">
-              <h1 class="p-2 bd-highlight">Flex item 1</h1>
-              <button class="p-3 bd-highlight rounded"  >+</button>
+              <h3 class="p-2 bd-highlight"><strong>TICKET PROPRI</strong></h3>
+              <button class="p-3 bd-highlight rounded" ><i class="fas fa-plus"></i></button>
             </div>
-           
+            
             <hr>
-            <br>
-            <select class="form-select " style="height:50% ; width:15%;" aria-label="Default select example">
-              <option selected>Open this select menu</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-            <br>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-              <label class="form-check-label" for="inlineCheckbox1">1</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-              <label class="form-check-label" for="inlineCheckbox2">2</label>
-            </div>
-
+            <br> 
+           
+            
+                
+           
+              
+            
+            
+           
             <table class="table table-dark table-striped"  id="tabella2" style="">
                   <thead>
                     <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">First</th>
-                      <th scope="col">Last</th>
-                      <th scope="col">Handle</th>
+                      <th scope="col">ID</th>
+                      <th scope="col">AZIENDA</th>
+                      <th scope="col">INIZIO</th>
+                      <th scope="col">FINE</th>
+                      <th scope="col">DESCRIZIONE</th>
+                      <th scope="col">COMUNE</th>
+                      <th scope="col">STADIO</th>
+                      <th scope="col">GRUPPO</th>
+                      <th scope="col">TIPOLOGIA</th>
+                      <th scope="col">DATA MOD.</th>
+                     
+
                     </tr>
                   </thead>
                     <tbody>
@@ -187,17 +230,38 @@
                         <td>Mark</td>
                         <td>Otto</td>
                         <td>@mdo</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                       
+                        
                       </tr>
                       <tr>
                         <th scope="row">2</th>
                         <td>Jacob</td>
                         <td>Thornton</td>
                         <td>@fat</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                       </tr>
                       <tr>
                         <th scope="row">3</th>
                         <td colspan="2">Larry the Bird</td>
                         <td>@twitter</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                       </tr>
                     </tbody>
                   </table>
@@ -247,21 +311,8 @@
 
         var dataTable_2= new DataTable("#tabella2");
 
-        fetch('https://reqres.in/api/users'), {
-          methods:'POST',
-          headers:{
-            'Content-Type':'application/json'
-          },
-          body:JSON.stringify({
-            name :'user 1'
-          }).then(res=>{
-            return res.json()
-          })
-        }
-
         
-        
-        
+     
       </script>
         
     
