@@ -84,7 +84,7 @@
             <div class="container-fluid">
               <div class="d-flex justify-content-between">
                 <h3 class="p-2 bd-highlight" ><strong>TICKET GRUPPI AZIENDALI</strong></h3>
-                <button class="p-3" id="bottone1"style="background-color:aqua;border-color:aqua" ><i class="fas fa-plus-square fa-2x" style="margin:-6px;"></i></button>
+                <button class="p-3" id="bottone1" style="background-color:aqua;border-color:aqua" ><i class="fas fa-plus-square fa-2x" style="margin:-6px;"></i></button>
               </div>
             
               <hr>
@@ -357,6 +357,7 @@
         var dataTable_2= new DataTable("#tabella2");
         const bottone1=document.getElementById('bottone1');
         const bottone2=document.getElementById('bottone2');
+        let classeFetch;
         
         /*
         let requestURL='prova.json';
@@ -369,11 +370,15 @@
           
         }
         */
-       
-        var NewRows=["","","","","","","","","","","","","",""];
+        fetch()
+            .then(response=>response.json())
+            .then(json=>{
+              classeFetch=json;
+
+            });
         
         bottone1.onclick=function(){
-       
+        
         }
 
         bottone2.onclick=function(){
