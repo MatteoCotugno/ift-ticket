@@ -130,13 +130,11 @@
                     <th scope="col">GESTORE</th>
                     <th scope="col">INIZIO</th>
                     <th scope="col">DESCRIZIONE</th>
-                    <th scope="col">INIZIO</th>
-                    <th scope="col">DESCRIZIONE</th>
                     <th scope="col">COMUNE</th>
                     <th scope="col">STADIO</th>
                     <th scope="col">TIPOLOGIA</th>
-                    <th scope="col">PROBLEMA PRODOTTO</th>
-                    <th scope="col">DATA</th>
+                    <th scope="col">PROBLEMA PROD</th>
+                    <th scope="col">DATA MOD</th>
                   </tr>
                 </thead>
                   <tbody>
@@ -153,8 +151,7 @@
                       <td></td>
                       <td></td>
                       <td></td>
-                      <td></td>
-                      <td></td>
+                      
                       
                       
                     </tr>
@@ -171,8 +168,7 @@
                       <td></td>
                       <td></td>
                       <td></td>
-                      <td></td>
-                      <td></td>
+                      
                     </tr>
                     <tr>
                       <th scope="row">3</th>
@@ -187,8 +183,7 @@
                       <td></td>
                       <td></td>
                       <td></td>
-                      <td></td>
-                      <td></td>
+                      
                     </tr>
                   </tbody>
                 </table>
@@ -362,12 +357,23 @@
         var dataTable_2= new DataTable("#tabella2");
         const bottone1=document.getElementById('bottone1');
         const bottone2=document.getElementById('bottone2');
-
+        
+        /*
+        let requestURL='prova.json';
+        let request=new XMLHttpRequest();
+        request.open('GET',requestURL);
+        request.responseType='json';
+        request.send();
+        request.onload=function(){
+          const prova =request.response;
+          
+        }
+        */
+       
         var NewRows=["","","","","","","","","","","","","",""];
         
         bottone1.onclick=function(){
-          
-          dataTable.rows().add(NewRows);
+       
         }
 
         bottone2.onclick=function(){

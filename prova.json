@@ -1,0 +1,40 @@
+{
+
+    "tabella1":[{
+    "ID":"ID",
+    "Messaggi nuovi":"Messaggi nuovi",
+    "TICKET RIF":"TICKET RIF",
+    "AZIENDA":"AZIENDA",
+    "GESTORE":"GESTORE",
+    "INIZIO":"INIZIO",
+    "DESCRIZIONE":"DESCRIZIONE",
+    "COMUNE":"COMUNE",
+    "STADIO":"STADIO",
+    "TIPOLOGIA":"TIPOLOGIA",
+    "PROBLEMA PROD":"PROBLEMA PROD",
+    "DATA MOD":"DATA MOD"
+
+    }
+    
+    ],
+    
+    "tabella2":[{
+    "ID":"ID",
+    "Messaggi nuovi":"Messaggi nuovi",
+    "TICKET RIF":"TICKET RIF",
+    "AZIENDA":"AZIENDA",
+    "GESTORE":"GESTORE",
+    "INIZIO":"INIZIO",
+    "DESCRIZIONE":"DESCRIZIONE",
+    "COMUNE":"COMUNE",
+    "STADIO":"STADIO",
+    "TIPOLOGIA":"TIPOLOGIA",
+    "PROBLEMA PROD":"PROBLEMA PROD",
+    "DATA MOD":"DATA MOD"
+
+    }
+    
+    ]
+
+    
+}
