@@ -84,7 +84,7 @@
             <div class="container-fluid">
               <div class="d-flex justify-content-between">
                 <h3 class="p-2 bd-highlight" ><strong>TICKET GRUPPI AZIENDALI</strong></h3>
-                <button class="p-3"style="background-color:aqua;border-color:aqua" ><i class="fas fa-plus-square fa-2x" style="margin:-6px;"></i></button>
+                <button class="p-3" id="bottone1"style="background-color:aqua;border-color:aqua" ><i class="fas fa-plus-square fa-2x" style="margin:-6px;"></i></button>
               </div>
             
               <hr>
@@ -223,7 +223,7 @@
               <div class="d-flex justify-content-between">
                 <h3 class="p-2 bd-highlight"><strong>TICKET PROPRI</strong></h3>
                 
-                <button class="p-3" style="background-color:aqua;border-color:aqua" ><i class="fas fa-plus-square fa-2x" style="margin:-6px;"></i></button>
+                <button class="p-3"id="bottone2" style="background-color:aqua;border-color:aqua" ><i class="fas fa-plus-square fa-2x" style="margin:-6px;"></i></button>
               </div>
               
               <hr>
@@ -355,11 +355,26 @@
     -->
   </body>
 
+
       <script>
+        /* bottoni aggiunta ticket*/
         var dataTable = new DataTable("#tabella");
-
         var dataTable_2= new DataTable("#tabella2");
+        const bottone1=document.getElementById('bottone1');
+        const bottone2=document.getElementById('bottone2');
 
+        var NewRows=["","","","","","","","","","","","","",""];
+        
+        bottone1.onclick=function(){
+          
+          dataTable.rows().add(NewRows);
+        }
+
+        bottone2.onclick=function(){
+          
+          dataTable_2.rows().add(NewRows);
+        }
+        
         
      
       </script>
