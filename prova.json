@@ -1,40 +1,47 @@
 {
 
-    "tabella1":[{
-    "ID":"ID",
-    "Messaggi nuovi":"Messaggi nuovi",
-    "TICKET RIF":"TICKET RIF",
-    "AZIENDA":"AZIENDA",
-    "GESTORE":"GESTORE",
-    "INIZIO":"INIZIO",
-    "DESCRIZIONE":"DESCRIZIONE",
-    "COMUNE":"COMUNE",
-    "STADIO":"STADIO",
-    "TIPOLOGIA":"TIPOLOGIA",
-    "PROBLEMA PROD":"PROBLEMA PROD",
-    "DATA MOD":"DATA MOD"
-
-    }
-    
+    "headers":[
+    "ID",
+    "Messaggi nuovi",
+    "TICKET RIF",
+    "AZIENDA",
+    "GESTORE",
+    "INIZIO",
+    "DESCRIZIONE",
+    "COMUNE",
+    "STADIO",
+    "TIPOLOGIA",
+    "PROBLEMA PROD",
+    "DATA MOD"
     ],
-    
-    "tabella2":[{
-    "ID":"ID",
-    "Messaggi nuovi":"Messaggi nuovi",
-    "TICKET RIF":"TICKET RIF",
-    "AZIENDA":"AZIENDA",
-    "GESTORE":"GESTORE",
-    "INIZIO":"INIZIO",
-    "DESCRIZIONE":"DESCRIZIONE",
-    "COMUNE":"COMUNE",
-    "STADIO":"STADIO",
-    "TIPOLOGIA":"TIPOLOGIA",
-    "PROBLEMA PROD":"PROBLEMA PROD",
-    "DATA MOD":"DATA MOD"
-
-    }
-    
+    "rows": [ 
+        [
+            23232,
+            "gino",
+            "gianni",
+            "ifortech",
+            "vodafone",
+            "21/02/1099",
+            "non so",
+            "sondrio",
+            "sansiro",
+            "brutto",
+            "mi annoio",
+            "23/03/3012"
+        ],
+        [
+            23232,
+            "gino",
+            "gianni",
+            "ifortech",
+            "vodafone",
+            "21/02/1099",
+            "non so",
+            "sondrio",
+            "sansiro",
+            "brutto",
+            "mi annoio",
+            "23/03/3012"
+        ]
     ]
-
-    
 }
