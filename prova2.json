@@ -7,9 +7,50 @@
     "FINE":"",
     "DESCRIZIONE":"",
     "COMUNE":"a",
-    "STADIO":"",
+    "STADIO":"Aperto",
     "GRUPPO":"",
     "TIPOLOGIA":"",
     "DATA MOD":""
    
-}]
+},
+{
+"ID":"",
+    "AZIENDA":"1",
+    "INIZIO":"2",
+    "FINE":"",
+    "DESCRIZIONE":"",
+    "COMUNE":"a",
+    "STADIO":"Chiuso",
+    "GRUPPO":"",
+    "TIPOLOGIA":"",
+    "DATA MOD":""
+       
+},
+{
+        "ID":"",
+        "AZIENDA":"1",
+        "INIZIO":"2",
+        "FINE":"",
+        "DESCRIZIONE":"",
+        "COMUNE":"a",
+        "STADIO":"Chiuso",
+        "GRUPPO":"",
+        "TIPOLOGIA":"",
+        "DATA MOD":""
+           
+},
+{
+        "ID":"",
+        "AZIENDA":"1",
+        "INIZIO":"2",
+        "FINE":"",
+        "DESCRIZIONE":"",
+        "COMUNE":"a",
+        "STADIO":"In elaborazione",
+        "GRUPPO":"",
+        "TIPOLOGIA":"",
+        "DATA MOD":""
+}
+
+
+]
