@@ -2,7 +2,7 @@
     {
 
     
-    "ID":"",
+    "ID":"1",
     "Messaggi nuovi":"1",
     "TICKET RIF":"2",
     "AZIENDA":"",
@@ -17,7 +17,21 @@
    
 },
 {
-    "ID":"",
+    "ID":"2",
+    "Messaggi nuovi":"1",
+    "TICKET RIF":"2",
+    "AZIENDA":"",
+    "GESTORE":"",
+    "INIZIO":"",
+    "DESCRIZIONE":"",
+    "COMUNE":"",
+    "STADIO":"Attesa utente",
+    "TIPOLOGIA":"",
+    "PROBLEMA PROD":"",
+    "DATA MOD":""
+},
+{
+    "ID":"3",
     "Messaggi nuovi":"1",
     "TICKET RIF":"2",
     "AZIENDA":"",
@@ -26,6 +40,20 @@
     "DESCRIZIONE":"",
     "COMUNE":"",
     "STADIO":"Chiuso",
+    "TIPOLOGIA":"",
+    "PROBLEMA PROD":"",
+    "DATA MOD":""
+},
+{
+    "ID":"4",
+    "Messaggi nuovi":"1",
+    "TICKET RIF":"2",
+    "AZIENDA":"",
+    "GESTORE":"",
+    "INIZIO":"",
+    "DESCRIZIONE":"",
+    "COMUNE":"",
+    "STADIO":"In elaborazione",
     "TIPOLOGIA":"",
     "PROBLEMA PROD":"",
     "DATA MOD":""

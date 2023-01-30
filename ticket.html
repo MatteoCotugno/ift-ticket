@@ -102,11 +102,11 @@
                 <label>  Stadio:  </label>
 
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" checked>
                       <label class="form-check-label" for="inlineCheckbox1"><strong>Aperto</strong></label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1" checked>
                       <label class="form-check-label" for="inlineCheckbox1"><strong>Attesa utente</strong></label>
                   </div>
                   <div class="form-check form-check-inline">
@@ -114,7 +114,7 @@
                       <label class="form-check-label" for="inlineCheckbox1"><strong>Chiuso</strong></label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option2">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option2" checked>
                       <label class="form-check-label" for="inlineCheckbox2"><strong>In elaborazione</strong></label>
             </div>
               <br>
@@ -229,13 +229,15 @@
         let paramsString = {
                 "Aperto" : "1",
                 "Chiuso" : "0",
+                "Attesa_utente":"1",
+                "In_elaborazione":"1"
               }
-                
-    
-      fetch("./prova.json")
+                 var dataTable = new DataTable("#tabella");
+                 const searchParams = new URLSearchParams(paramsString);
+      fetch("./ESEMPIO.php?"+searchParams)
             .then(response=>response.json())
             .then(json=>{ 
-              var dataTable = new DataTable("#tabella");
+             
               console.log(json)
               dataTable.import({
                
@@ -248,44 +250,56 @@
             });
 
 
-            fetch("./prova2.json")
-              .then(response=>response.json())
-              .then(json=>{ 
-                var dataTable = new DataTable("#tabella2");
-                console.log(json)
-                dataTable.import({
-                
-                  type: "json",
-                  data: JSON.stringify(json),
-                  
-                });
-           
-            });
+       
 
              
 
 
-            check1.onchange=function(){
-              paramsString.Aperto = 1;
+            check1.onchange = function(e){
+              
+              if(e.target.checked) {
+                paramsString.Aperto = 1;
+              } else {
+                paramsString.Aperto = 0;
+              }
+              
               tabella();
 
             }
 
-          /*  check2.onchange=function(){
-              paramsString.= 0;
-              tabella();
+            check2.onchange=function(e){
+              if(e.target.checked) {
+                paramsString.Attesa_utente  = 1;
+              } else {
+                paramsString.Attesa_utente  = 0;
+              }
               
-            }*/
-            check3.onchange=function(){
-              paramsString.Chiuso = 1;
+              //paramsString.Attesa_utente = 1;
               tabella();
               
             }
-          /*  check4.onchange=function(){
-              paramsString.= 0;
+            check3.onchange =function(e){
+
+              if(e.target.checked) {
+                paramsString.Chiuso  = 1;
+              } else {
+                paramsString.Chiuso  = 0;
+              }
+              //paramsString.Chiuso = 1;
               tabella();
               
-            }*/
+            }
+            check4.onchange=function(e){
+
+              if(e.target.checked) {
+                paramsString.In_elaborazione  = 1;
+              } else {
+                paramsString.In_elaborazione  = 0;
+              }
+              //paramsString.In_elaborazione = 1;
+              tabella();
+              
+            }
 
             function tabella() {
               
@@ -294,8 +308,9 @@
               fetch("./ESEMPIO.php?" + searchParams)
               .then(response=>response.json())        
               .then(json=>{ 
-                var dataTable = new DataTable("#tabella");
-                console.log(json)
+               
+                dataTable.destroy()
+                dataTable.init()
                 dataTable.import({
                 
                   type: "json",
