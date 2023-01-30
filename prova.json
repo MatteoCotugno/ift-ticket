@@ -1,47 +1,17 @@
-{
+[{
 
-    "headers":[
-    "ID",
-    "Messaggi nuovi",
-    "TICKET RIF",
-    "AZIENDA",
-    "GESTORE",
-    "INIZIO",
-    "DESCRIZIONE",
-    "COMUNE",
-    "STADIO",
-    "TIPOLOGIA",
-    "PROBLEMA PROD",
-    "DATA MOD"
-    ],
-    "rows": [ 
-        [
-            23232,
-            "gino",
-            "gianni",
-            "ifortech",
-            "vodafone",
-            "21/02/1099",
-            "non so",
-            "sondrio",
-            "sansiro",
-            "brutto",
-            "mi annoio",
-            "23/03/3012"
-        ],
-        [
-            23232,
-            "gino",
-            "gianni",
-            "ifortech",
-            "vodafone",
-            "21/02/1099",
-            "non so",
-            "sondrio",
-            "sansiro",
-            "brutto",
-            "mi annoio",
-            "23/03/3012"
-        ]
-    ]
-}
+    
+    "ID":"",
+    "Messaggi nuovi":"1",
+    "TICKET RIF":"2",
+    "AZIENDA":"",
+    "GESTORE":"",
+    "INIZIO":"",
+    "DESCRIZIONE":"",
+    "COMUNE":"",
+    "STADIO":"",
+    "TIPOLOGIA":"",
+    "PROBLEMA PROD":"",
+    "DATA MOD":""
+   
+}]
