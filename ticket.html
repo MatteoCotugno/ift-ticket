@@ -97,29 +97,26 @@
                   
                 </select>
               </div>
-              
-            
               <br>
               
                 <label>  Stadio:  </label>
 
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                  <label class="form-check-label" for="inlineCheckbox1"><strong>Aperto</strong></label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                  <label class="form-check-label" for="inlineCheckbox1"><strong>Attesa utente</strong></label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                  <label class="form-check-label" for="inlineCheckbox1"><strong>Chiuso</strong></label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                  <label class="form-check-label" for="inlineCheckbox2"><strong>In elaborazione</strong></label>
-                
-              </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                      <label class="form-check-label" for="inlineCheckbox1"><strong>Aperto</strong></label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                      <label class="form-check-label" for="inlineCheckbox1"><strong>Attesa utente</strong></label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                      <label class="form-check-label" for="inlineCheckbox1"><strong>Chiuso</strong></label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option2">
+                      <label class="form-check-label" for="inlineCheckbox2"><strong>In elaborazione</strong></label>
+            </div>
               <br>
               <br>
 
@@ -140,9 +137,9 @@
                     <th scope="col">DATA MOD</th>
                   </tr>
                 </thead>
-                  <tbody>                    
+                <tbody>                    
                 </tbody>
-                </table>
+              </table>
 
                 
                 
@@ -185,33 +182,14 @@
 
                       </tr>
                     </thead>
-                      <tbody>
-                   
-                       
-                       
-                        
-                        
-
-                      </tbody>
-                    </table>
+                    <tbody>
+                    </tbody>
+              </table>
 
                    
             </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-              
-            
 
 
             </div>
@@ -242,6 +220,10 @@
        
         const bottone1=document.getElementById('bottone1');
         const bottone2=document.getElementById('bottone2');
+        const check1=document.getElementById('inlineCheckbox1');
+        const check2=document.getElementById('inlineCheckbox2');
+        const check3=document.getElementById('inlineCheckbox3');
+        const check4=document.getElementById('inlineCheckbox4');
         
         
        
@@ -258,38 +240,80 @@
                 data: JSON.stringify(json),
                 
               });
+             
+              
             });
 
 
             fetch("./prova2.json")
-            .then(response=>response.json())
-            .then(json=>{ 
-              var dataTable = new DataTable("#tabella2");
-              console.log(json)
-              dataTable.import({
-               
-                type: "json",
-                data: JSON.stringify(json),
+              .then(response=>response.json())
+              .then(json=>{ 
+                var dataTable = new DataTable("#tabella2");
+                console.log(json)
+                dataTable.import({
                 
-              });
-            
+                  type: "json",
+                  data: JSON.stringify(json),
+                  
+                });
+           
             });
 
             
+            check1.onchange=function(){
+              
+              fetch("./ESEMPIO.php")
+              
+              .then(response=>response.json())
+              
+              .then(json=>{ 
+                var dataTable = new DataTable("#tabella");
+                console.log(json)
+                dataTable.import({
+                
+                  type: "json",
+                  data: JSON.stringify(json),
+                  
+                });
 
-      
+                const paramsString = 'chiuso=1&aperto=0';
+                const searchParams = new URLSearchParams(paramsString);
+
+                for (const value of searchParams.values("1")) {
+                  
+                 
+                }
+                for(const value of searchParams.values("0")){
+
+                }
+
+
+            });
+
+            }
+
+            check2.onchange=function(){
+              
+            }
+            check3.onchange=function(){
+              
+            }
+            check4.onchange=function(){
+              
+            }
+          
                     
                   
 
-        bottone1.onclick=function(){
-          location.href="http://127.0.0.1/IFT/ift-ticket/new_ticket.html";
-          
-        }
+            bottone1.onclick=function(){
+              location.href="http://127.0.0.1/IFT/ift-ticket/new_ticket.html";
+              
+            }
 
-        bottone2.onclick=function(){
-          location.href="http://127.0.0.1/IFT/ift-ticket/new_ticket.html";
-          
-        }
+            bottone2.onclick=function(){
+              location.href="http://127.0.0.1/IFT/ift-ticket/new_ticket.html";
+              
+            }
         
      
       </script>
