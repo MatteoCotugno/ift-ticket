@@ -2,9 +2,9 @@
 
 $array=[
 
-    "ID"=>"23",
-    "Messaggi nuovi"=>"1",
-    "TICKET RIF"=>"2",
+    "ID"=>"",
+    "Messaggi nuovi"=>"",
+    "TICKET RIF"=>"",
     "AZIENDA"=>"",
     "GESTORE"=>"",
     "INIZIO"=>"",

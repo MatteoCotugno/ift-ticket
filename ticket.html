@@ -226,7 +226,10 @@
         const check4=document.getElementById('inlineCheckbox4');
         
         
-       
+        let paramsString = {
+                "Aperto" : "1",
+                "Chiuso" : "0",
+              }
                 
     
       fetch("./prova.json")
@@ -259,13 +262,37 @@
            
             });
 
-            
+             
+
+
             check1.onchange=function(){
+              paramsString.Aperto = 1;
+              tabella();
+
+            }
+
+          /*  check2.onchange=function(){
+              paramsString.= 0;
+              tabella();
               
-              fetch("./ESEMPIO.php")
+            }*/
+            check3.onchange=function(){
+              paramsString.Chiuso = 1;
+              tabella();
               
-              .then(response=>response.json())
+            }
+          /*  check4.onchange=function(){
+              paramsString.= 0;
+              tabella();
               
+            }*/
+
+            function tabella() {
+              
+              const searchParams = new URLSearchParams(paramsString);
+              
+              fetch("./ESEMPIO.php?" + searchParams)
+              .then(response=>response.json())        
               .then(json=>{ 
                 var dataTable = new DataTable("#tabella");
                 console.log(json)
@@ -275,31 +302,7 @@
                   data: JSON.stringify(json),
                   
                 });
-
-                const paramsString = 'chiuso=1&aperto=0';
-                const searchParams = new URLSearchParams(paramsString);
-
-                for (const value of searchParams.values("1")) {
-                  
-                 
-                }
-                for(const value of searchParams.values("0")){
-
-                }
-
-
-            });
-
-            }
-
-            check2.onchange=function(){
-              
-            }
-            check3.onchange=function(){
-              
-            }
-            check4.onchange=function(){
-              
+              });
             }
           
                     

@@ -10,7 +10,7 @@
     "INIZIO":"",
     "DESCRIZIONE":"",
     "COMUNE":"",
-    "STADIO":"",
+    "STADIO":"Aperto",
     "TIPOLOGIA":"",
     "PROBLEMA PROD":"",
     "DATA MOD":""
@@ -25,7 +25,7 @@
     "INIZIO":"",
     "DESCRIZIONE":"",
     "COMUNE":"",
-    "STADIO":"",
+    "STADIO":"Chiuso",
     "TIPOLOGIA":"",
     "PROBLEMA PROD":"",
     "DATA MOD":""
