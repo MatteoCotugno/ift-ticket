@@ -19,47 +19,32 @@
     <!--navbar-->
     
     <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-            <img src="immagini/" width="30" height="30" alt="">
-                <a class="navbar-brand" href="#" style="color:white">IFT</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-               
-              
-              
-              
-              
-            </ul>
-            <form class="d-flex">
-                
-                
-                <a class="nav-link active" aria-current="page" href="#" ><i class="fas fa-life-ring"></i> Aiuto</a>
-                <a class="nav-link active" aria-current="page" href="#" ><i class="fas fa-folder"></i> Documenti</a>
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" ><i class="fas fa-user"></i> Utenza</a>   
-                
-                
-              
-            </form>
-          </div>
-        </div>
+      <div class="container-fluid">
+          <img src="immagini/" width="30" height="30" alt="">
+              <a class="navbar-brand" href="#" style="color:white">IFT</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                    <form class="d-flex">
+                      <a class="nav-link active" aria-current="page" href="#" ><i class="fas fa-life-ring"></i> Aiuto</a>
+                      <a class="nav-link active" aria-current="page" href="#" ><i class="fas fa-folder"></i> Documenti</a>
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" ><i class="fas fa-user"></i> Utenza</a>
+                    </form>
+                </div>
+      </div>
     </nav>
 
-
-      
     <div class=" d-flex flex-row ">
       <!--sidebar-->
-     
-          
-        <ul class="nav flex-column">
-          <li class="nav-item" >
-            <a class="nav-link active" href="#"><i class="fas fa-clipboard-list fa-3x"></i><br>giornata<br>lavorativa</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><a class="nav-link active" href="#"><i class="fas fa-clipboard-list fa-3x"></i><br>Miei dati</a>
-          </li>
+      <ul class="nav flex-column">
+        <li class="nav-item" >
+          <a class="nav-link active" href="#"><i class="fas fa-clipboard-list fa-3x"></i><br>giornata<br>lavorativa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><a class="nav-link active" href="#"><i class="fas fa-clipboard-list fa-3x"></i><br>Miei dati</a>
+        </li>
           <li class="nav-item" >
             <a class="nav-link" href="#"><a class="nav-link active" href="#"><i class="fas fa-clipboard-list fa-3x"></i><br>Presenze</a>
           </li>
@@ -68,39 +53,29 @@
           </li>
           <li class="nav-item" >
             <a class="nav-link" href="#"><a class="nav-link active" href="#"><i class="fas fa-clipboard-list fa-3x"></i><br>Trasferte</a>
-          </li>
+          </li> 
+      </ul>
           
-        </ul>
-          
-          
-          
-      
-
-        <section class="section">
-
-
-          <div class="card">
-
-            <div class="container-fluid">
+ 
+      <section class="section">
+        <div class="card">
+           <div class="container-fluid">
               <div class="d-flex justify-content-between">
                 <h3 class="p-2 bd-highlight" ><strong>TICKET GRUPPI AZIENDALI</strong></h3>
                 <button class="p-3 " id="bottone1"><i class="fas fa-plus-square fa-2x" style="margin-top:6px;"></i></button>
               </div>
-            
               <hr>
               <br>
               <div class="d-flex flex-row">
                 <div class="text" style="margin-top:5px"> Aziende: </div>
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Open this select menu</option>
-                  <option value="1">One</option>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
                   
-                </select>
-              </div>
-              <br>
-              
-                <label>  Stadio:  </label>
+                  </select>
+                </div><br>
 
+                <label>  Stadio:  </label>
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" checked>
                       <label class="form-check-label" for="inlineCheckbox1"><strong>Aperto</strong></label>
@@ -116,52 +91,38 @@
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option2" checked>
                       <label class="form-check-label" for="inlineCheckbox2"><strong>In elaborazione</strong></label>
+                  </div><br><br>
+
+                  <table class="table table-bordered table-striped"  id="tabella" >
+                    <thead>
+                      <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Messaggi nuovi</th>
+                        <th scope="col">TICKET RIF</th>
+                        <th scope="col">AZIENDA</th>
+                        <th scope="col">GESTORE</th>
+                        <th scope="col">INIZIO</th>
+                        <th scope="col">DESCRIZIONE</th>
+                        <th scope="col">COMUNE</th>
+                        <th scope="col">STADIO</th>
+                        <th scope="col">TIPOLOGIA</th>
+                        <th scope="col">PROBLEMA PROD</th>
+                        <th scope="col">DATA MOD</th>
+                      </tr>
+                    </thead>
+                    <tbody>                    
+                    </tbody>
+                  </table>
             </div>
-              <br>
-              <br>
-
-              <table class="table table-bordered table-striped"  id="tabella" >
-                <thead>
-                  <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Messaggi nuovi</th>
-                    <th scope="col">TICKET RIF</th>
-                    <th scope="col">AZIENDA</th>
-                    <th scope="col">GESTORE</th>
-                    <th scope="col">INIZIO</th>
-                    <th scope="col">DESCRIZIONE</th>
-                    <th scope="col">COMUNE</th>
-                    <th scope="col">STADIO</th>
-                    <th scope="col">TIPOLOGIA</th>
-                    <th scope="col">PROBLEMA PROD</th>
-                    <th scope="col">DATA MOD</th>
-                  </tr>
-                </thead>
-                <tbody>                    
-                </tbody>
-              </table>
-
-                
-                
-
-            </div>
-            
-
-            
+ 
             <div class="container-fluid">
               <div class="d-flex justify-content-between">
                 <h3 class="p-2 bd-highlight"><strong>TICKET PROPRI</strong></h3>
-                
                 <button class="p-3"id="bottone2" ><i class="fas fa-plus-square fa-2x" style="margin-top:6px;"></i></button>
               </div>
-              
-              <hr>
-              <br> 
-            
-              
-                  
+              <hr><br> 
+               
               <label>  Stadio:  </label>
-
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option1" checked>
                       <label class="form-check-label" for="inlineCheckbox1"><strong>Aperto</strong></label>
@@ -177,42 +138,33 @@
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="option2" checked>
                       <label class="form-check-label" for="inlineCheckbox2"><strong>In elaborazione</strong></label>
-            </div>
-              <br>
-              <br>
-                
-              
-              
-            
-              <table class="table table-bordered table-striped"  id="tabella2" >
-                    <thead>
-                      <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">AZIENDA</th>
-                        <th scope="col">INIZIO</th>
-                        <th scope="col">FINE</th>
-                        <th scope="col">DESCRIZIONE</th>
-                        <th scope="col">COMUNE</th>
-                        <th scope="col">STADIO</th>
-                        <th scope="col">GRUPPO</th>
-                        <th scope="col">TIPOLOGIA</th>
-                        <th scope="col">DATA MOD.</th>
-                      
-
-                      </tr>
-                    </thead>
-                    <tbody>
-                    </tbody>
-              </table>
+            </div><br><br>
+            <table class="table table-bordered table-striped"  id="tabella2" >
+              <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">AZIENDA</th>
+                  <th scope="col">INIZIO</th>
+                  <th scope="col">FINE</th>
+                  <th scope="col">DESCRIZIONE</th>
+                  <th scope="col">COMUNE</th>
+                  <th scope="col">STADIO</th>
+                  <th scope="col">GRUPPO</th>
+                  <th scope="col">TIPOLOGIA</th>
+                  <th scope="col">DATA MOD.</th>
+                </tr>
+              </thead>
+                <tbody>
+                </tbody>
+            </table>
 
                    
-            </div>
 
 
 
 
-            </div>
-        </section>
+        </div>
+      </section>
       
     </div>                
                    
@@ -232,83 +184,72 @@
     -->
   </body>
 
-
-      <script>
+  <script>
         /* bottoni aggiunta ticket*/
-       
-       
         const bottone1=document.getElementById('bottone1');
         const bottone2=document.getElementById('bottone2');
+        //gestione checkbox prima tabella
         const check1=document.getElementById('inlineCheckbox1');
         const check2=document.getElementById('inlineCheckbox2');
         const check3=document.getElementById('inlineCheckbox3');
         const check4=document.getElementById('inlineCheckbox4');
+        //gestione checkbox seconda tabella
         const check5=document.getElementById('inlineCheckbox5');
         const check6=document.getElementById('inlineCheckbox6');
         const check7=document.getElementById('inlineCheckbox7');
         const check8=document.getElementById('inlineCheckbox8');
-        
+        //gestione stati prima tabella
         let paramsString = {
-                "Aperto" : "1",
-                "Chiuso" : "0",
-                "Attesa_utente":"1",
-                "In_elaborazione":"1"
-              }
-               
+          "Aperto" : "1",
+          "Chiuso" : "0",
+          "Attesa_utente":"1",
+          "In_elaborazione":"1"
+        }
+        //gestione stati seconda tabella   
         let paramsString2 = {
-                "Aperto" : "1",
-                "Chiuso" : "0",
-                "Attesa_utente":"1",
-                "In_elaborazione":"1"
-              }
-            
-        
-
-                 var dataTable = new DataTable("#tabella");
-                 const searchParams = new URLSearchParams(paramsString);
-      fetch("./ESEMPIO.php?"+searchParams)
-            .then(response=>response.json())
-            .then(json=>{ 
-             
-              console.log(json)
-              dataTable.import({
-               
-                type: "json",
-                data: JSON.stringify(json),
+          "Aperto" : "1",
+          "Chiuso" : "0",
+          "Attesa_utente":"1",
+          "In_elaborazione":"1"
+        }
+        //creazione e chiamata prima tabella
+        var dataTable = new DataTable("#tabella");
+        const searchParams = new URLSearchParams(paramsString);
+        fetch("./ESEMPIO.php?"+searchParams)
+          .then(response=>response.json())
+          .then(json=>{ 
+            console.log(json)
+            dataTable.import({
+              type: "json",
+              data: JSON.stringify(json),
                 
-              });
+            });
               
              
               
-            });
-
-//tabella 2
-var dataTable2 = new DataTable2("#tabella2");
-                 const searchParams2 = new URLSearchParams(paramsString2);
-      fetch("./ESEMPIO2.php?"+searchParams2)
+          });
+          //creazione e chiamata seconda tabella
+          var dataTable2 = new DataTable("#tabella2");
+          const searchParams2 = new URLSearchParams(paramsString2);
+          fetch("./ESEMPIO2.php?"+searchParams2)
             .then(response=>response.json())
             .then(json=>{ 
-             
               console.log(json)
               dataTable2.import({
-               
                 type: "json",
                 data: JSON.stringify(json),
-                
+                  
               });
             });
             
-//
+            //gestione stati checkbox prima tabella
             check1.onchange = function(e){
-              
-              if(e.target.checked) {
+              if(e.target.checked){
                 paramsString.Aperto = 1;
               } else {
                 paramsString.Aperto = 0;
               }
-              
               tabella();
-
             }
 
             check2.onchange=function(e){
@@ -317,45 +258,41 @@ var dataTable2 = new DataTable2("#tabella2");
               } else {
                 paramsString.Attesa_utente  = 0;
               }
-              
-              //paramsString.Attesa_utente = 1;
+             
               tabella();
-              
             }
-            check3.onchange =function(e){
 
+            check3.onchange =function(e){
               if(e.target.checked) {
                 paramsString.Chiuso  = 1;
               } else {
                 paramsString.Chiuso  = 0;
               }
-              //paramsString.Chiuso = 1;
-              tabella();
               
+              tabella();
             }
-            check4.onchange=function(e){
 
+            check4.onchange=function(e){
               if(e.target.checked) {
                 paramsString.In_elaborazione  = 1;
               } else {
                 paramsString.In_elaborazione  = 0;
               }
-              //paramsString.In_elaborazione = 1;
+              
               tabella();
-              
             }
-            //2
+
+            //gestione stati checkbox seconda tabella
+
             check5.onchange = function(e){
-              
               if(e.target.checked) {
                 paramsString2.Aperto = 1;
               } else {
                 paramsString2.Aperto = 0;
               }
-              
               tabella2();
-
             }
+
             check6.onchange=function(e){
               if(e.target.checked) {
                 paramsString2.Attesa_utente  = 1;
@@ -363,91 +300,70 @@ var dataTable2 = new DataTable2("#tabella2");
                 paramsString2.Attesa_utente  = 0;
               }
               
-              //paramsString.Attesa_utente = 1;
               tabella2();
-              
             }
-            check7.onchange =function(e){
 
+            check7.onchange =function(e){
               if(e.target.checked) {
                 paramsString2.Chiuso  = 1;
               } else {
                 paramsString2.Chiuso  = 0;
               }
-              //paramsString.Chiuso = 1;
+              
               tabella2();
-
             }
             check8.onchange=function(e){
-
               if(e.target.checked) {
                 paramsString2.In_elaborazione  = 1;
               } else {
                 paramsString2.In_elaborazione  = 0;
               }
-              //paramsString.In_elaborazione = 1;
+              
               tabella2();
-
             }
 
-
-            
-
-
-
+            //funzione aggiornamento prima tabella
             function tabella() {
-              
               const searchParams = new URLSearchParams(paramsString);
-              
               fetch("./ESEMPIO.php?" + searchParams)
-              .then(response=>response.json())        
-              .then(json=>{ 
-               
-                dataTable.destroy()
-                dataTable.init()
-                dataTable.import({
-                
-                  type: "json",
-                  data: JSON.stringify(json),
-                  
+                .then(response=>response.json())        
+                .then(json=>{ 
+                  dataTable.destroy()
+                  dataTable.init()
+                  dataTable.import({
+                    type: "json",
+                    data: JSON.stringify(json),
+                  });
                 });
-              });
             }
 
-        //tabella 2
-           
-        function tabella2() {
+            //funzione aggiornamento prima tabella
+            function tabella2() { 
+                  const searchParams2 = new URLSearchParams(paramsString2);
+                  fetch("./ESEMPIO2.php?" + searchParams2)
+                    .then(response=>response.json())        
+                    .then(json=>{ 
+                      dataTable2.destroy()
+                      dataTable2.init()
+                      dataTable2.import({
+                        type: "json",
+                        data: JSON.stringify(json),
+                      
+                      });
+                    });
+              }
+              bottone1.onclick=function(){
+                location.href="http://127.0.0.1/IFT/ift-ticket/new_ticket.html";
               
-              const searchParams2 = new URLSearchParams(paramsString2);
-              
-              fetch("./ESEMPIO2.php?" + searchParams2)
-              .then(response=>response.json())        
-              .then(json=>{ 
-               
-                dataTable2.destroy()
-                dataTable2.init()
-                dataTable2.import({
-                
-                  type: "json",
-                  data: JSON.stringify(json),
-                  
-                });
-              });
-            }
-                  
+              }
 
-            bottone1.onclick=function(){
-              location.href="http://127.0.0.1/IFT/ift-ticket/new_ticket.html";
+              bottone2.onclick=function(){
+                location.href="http://127.0.0.1/IFT/ift-ticket/new_ticket.html";
               
-            }
-
-            bottone2.onclick=function(){
-              location.href="http://127.0.0.1/IFT/ift-ticket/new_ticket.html";
-              
-            }
+              }
         
      
-      </script>
+  </script>
         
     
 
