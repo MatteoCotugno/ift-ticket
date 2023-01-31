@@ -35,7 +35,7 @@
      font-size: 70%;
      height:20px ;
      width: 80px;
-     background-color: gray;
+     background-color:#0dcaf0;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -43,8 +43,6 @@
     
      
 }
-
-
 
 
 
