@@ -347,7 +347,18 @@
     -->
   </body>
   <script>
-    var dataTable2 = new DataTable("#tabella3");
+    var dataTable3 = new DataTable("#tabella3");
+         
+          fetch("./provaNewTicket.json")
+            .then(response=>response.json())
+            .then(json=>{ 
+              console.log(json)
+              dataTable3.import({
+                type: "json",
+                data: JSON.stringify(json),
+                  
+              });
+            });
   </script>
 
 
