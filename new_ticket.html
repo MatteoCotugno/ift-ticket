@@ -82,9 +82,9 @@
                 <span class="navbar-brand mb-0 h1" style="margin-left:100px ;font-size:xx-large;"><strong>TICKET</strong></span>
 
                     <div class="d-flex flex-row-reverse">
-                        <button style="width:120px;height:40px;margin:20px;margin-right:80px;">Salva</button>
-                        <button style="width:80px;height:40px;margin: 20px;"><i class="fas fa-bars"></i></button>
-                        <button style="width:80px;height:40px;margin:20px"><i class="far fa-plus-square"></i></button>
+                        <button style="border-color: transparent;background-color:rgb(77, 178, 245);color:rgb(253, 253, 253); width:120px;height:40px;margin:20px;margin-right:80px;">Salva</button>
+                        <button style="border-color: transparent;background-color:rgb(77, 178, 245);color:rgb(253, 253, 253);width:80px;height:40px;margin: 20px;"><i class="fas fa-bars"></i></button>
+                        <button style="border-color: transparent;background-color:rgb(77, 178, 245);color:rgb(253, 253, 253);width:80px;height:40px;margin:20px"><i class="fas fa-plus-circle"></i></button>
                        
                     </div>
             </nav>
@@ -98,16 +98,26 @@
       
               <form class="row" style="margin-top:2%;">
                 <div class="col"style="margin-left:2%;">
-                  <label class="form-label"><strong>Azienda</strong></label>
-                  <input class="form-control" >
+                  
+                    <label class="form-label"><strong>Azienda</strong></label>
+                    <div class="input-group">
+                      <input class="form-control" ><span class="input-group-text"><i class="fas fa-backspace"></i></span>
+                    </div>
+                  
+                  
+                  
                 </div>
                 <div class="col">
                   <label  class="form-label"><strong>Indirizzo Intervento</strong></label>
-                  <input  class="form-control" >
+                  <div class="input-group">
+                    <input class="form-control" ><span class="input-group-text"><i class="fas fa-backspace"></i></span>
+                  </div>
                 </div>
                 <div class="col" style="margin-right:2%">
                   <label class="form-label"><strong>referente</strong></label>
-                  <input  class="form-control" >
+                  <div class="input-group">
+                    <input class="form-control" ><span class="input-group-text"><i class="fas fa-backspace"></i></span>
+                  </div>
                 </div>
               </form>
               <form class="row" style="margin-top:2%;">
@@ -127,7 +137,7 @@
 
               <div class="card" style="width: 1000px;height: 400px;margin-left:2%;">
                 <div class="card-header">
-                  <button style="border-radius: 180px;"><i class="fas fa-plus"></i></button>
+                  <button style=" border-color: transparent;color:aliceblue;background-color:rgb(77, 178, 245);border-radius: 180px;"><i class="fas fa-plus"></i></button>
                 </div>
                 <div class="card-body">
                   
@@ -190,9 +200,14 @@
                   </select>
                   <br>
                   <label for="inputEmail4" class="form-label"><strong>Gruppo</strong></label>
-                  <select class="form-control">
-                    <option>Default select</option>
-                  </select>
+                  <div class="input-group">
+                    
+                    <select class="form-select" id="inputGroupSelect01">
+                      <option>Default select</option>
+                    </select>
+                    <label class="input-group-text"><i class="fas fa-backspace"></i></label>
+                  </div>
+                  
                 </div>
                 <div class="col" style="margin-right:2%">
                   <label for="inputPassword4" class="form-label"><strong>Gestore</strong></label>
@@ -222,9 +237,9 @@
                 <tbody>                    
                 </tbody>
               </table>  
-              <button>Inserisci Allegato</button>
+              <button style="color:aliceblue;background-color: rgb(207, 207, 33);">Inserisci Allegato</button>
               
-              <button>Associa Allegato</button>
+              <button style="border-color: transparent;color:aliceblue;background-color: rgb(207, 207, 33);">Associa Allegato</button>
               </form>
               <br>
               <form>
@@ -245,7 +260,7 @@
                   <div class="card w-75">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>           
+                      <p class="card-text"></p>           
                     </div>
                   </div>
 
@@ -253,7 +268,7 @@
                     <div class="card w-75">
                       <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>              
+                        <p class="card-text"></p>              
                       </div>
                     </div>
                     
@@ -263,7 +278,7 @@
                   <input  class="form-control"><br>
                   <div class="d-flex flex-row-reverse">
                     
-                    <button>Inoltra email</button>
+                    <button style="border-color: transparent;color:aliceblue;background-color: rgb(86, 177, 238);">Inoltra email</button>
                   </div>
                   
                   <br>
@@ -272,8 +287,8 @@
                   <input  class="form-control"><br>
                   <div class="d-flex flex-row-reverse">
                     
-                    <button style="margin-left:10px;">Chiudi ticket e invia email</button>
-                    <button>Invia ticket</button>
+                    <button style="border-color: transparent;margin-left:10px;color:aliceblue;background-color: rgb(86, 177, 238);">Chiudi ticket e invia email</button>
+                    <button style="border-color: transparent;color:aliceblue;background-color: rgb(86, 177, 238);">Invia ticket</button>
                   </div>
                   
                   
@@ -285,12 +300,12 @@
                   <div class="card w-75">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>           
+                      <p class="card-text"></p>           
                     </div>
                     
                   </div>
-                    <button style="margin-left:1%;">Invia</button>
-                    <button style="margin-left:1%;">Allega file</button>
+                    <button style="border-color: transparent;color:aliceblue;background-color: rgb(86, 177, 238);margin-left:1%;">Invia</button>
+                    <button style="border-color: transparent;color:aliceblue;background-color: rgb(86, 177, 238);margin-left:1%;">Allega file</button>
                     <br>
                     <br>
                     <div class="col"style="margin-left:1%">
@@ -298,7 +313,7 @@
                       <div class="card w-75">
                         <div class="card-body">
                           <h5 class="card-title">Card title</h5>
-                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>           
+                          <p class="card-text"></p>           
                         </div>
                       </div>
 
