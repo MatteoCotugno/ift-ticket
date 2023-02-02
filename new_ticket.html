@@ -25,7 +25,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" >
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                
               
@@ -38,7 +38,7 @@
                 
                 <a class="nav-link active" aria-current="page" href="#" ><i class="fas fa-life-ring"></i> Aiuto</a>
                 <a class="nav-link active" aria-current="page" href="#" ><i class="fas fa-folder"></i> Documenti</a>
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" ><i class="fas fa-user"></i> Utenza</a>   
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" ><i class="fas fa-user"></i> Utenza</a>   
                 
                 
               
@@ -53,7 +53,7 @@
       <!--sidebar-->
      
           
-        <ul class="nav flex-column">
+        <ul class="nav flex-column" >
           <li class="nav-item" >
             <a class="nav-link active" href="#"><i class="fas fa-clipboard-list fa-3x"></i><br>giornata<br>lavorativa</a>
           </li>
@@ -98,41 +98,40 @@
       
               <form class="row" style="margin-top:2%;">
                 <div class="col"style="margin-left:2%;">
-                  <label for="inputEmail4" class="form-label">Azienda</label>
-                  <input type="email" class="form-control" id="inputEmail4">
+                  <label class="form-label"><strong>Azienda</strong></label>
+                  <input class="form-control" >
                 </div>
                 <div class="col">
-                  <label for="inputPassword4" class="form-label">Indirizzo Intervento</label>
-                  <input type="password" class="form-control" id="inputPassword4">
+                  <label  class="form-label"><strong>Indirizzo Intervento</strong></label>
+                  <input  class="form-control" >
                 </div>
                 <div class="col" style="margin-right:2%">
-                  <label for="inputPassword4" class="form-label">referente</label>
-                  <input type="password" class="form-control" id="inputPassword4">
+                  <label class="form-label"><strong>referente</strong></label>
+                  <input  class="form-control" >
                 </div>
               </form>
               <form class="row" style="margin-top:2%;">
                 <div class="col"style="margin-left:2%;">
-                  <label for="inputEmail4" class="form-label">Azienda</label>
-                  <input type="email" class="form-control" id="inputEmail4">
+                  <label  class="form-label"><strong>Azienda</strong></label>
+                  <input  class="form-control" >
                 </div>
                 <div class="col">
-                  <label for="inputPassword4" class="form-label">Indirizzo Intervento</label>
-                  <input type="password" class="form-control" id="inputPassword4">
+                  <label class="form-label"><strong>Indirizzo Intervento</strong></label>
+                  <input  class="form-control" >
                 </div>
                 <div class="col" style="margin-right:2%">
-                  <label for="inputPassword4" class="form-label">referente</label>
-                  <input type="password" class="form-control" id="inputPassword4">
+                  <label  class="form-label"><strong>referente</strong></label>
+                  <input  class="form-control">
                 </div>
               </form>
 
               <div class="card" style="width: 1000px;height: 400px;margin-left:2%;">
                 <div class="card-header">
-                  <i class="far fa-plus-square"></i>
+                  <button style="border-radius: 180px;"><i class="fas fa-plus"></i></button>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  
+                
                 </div>
               </div>
 
@@ -158,16 +157,16 @@
               <form class="row" style="margin-top:2%;">
 
                 <div class="col"style="margin-left:2%;">
-                  <label for="inputEmail4" class="form-label">Data</label>
-                  <input type="email" class="form-control" id="inputEmail4" style="width: 200px;">
+                  <label class="form-label"><strong>Data</strong></label>
+                  <input class="form-control"  style="width: 200px;">
                 </div>
                 <div class="col">
-                  <label for="inputPassword4" class="form-label">Scadenza</label>
-                  <input type="password" class="form-control" id="inputPassword4"style="width: 200px;">
+                  <label class="form-label"><strong>Scadenza</strong></label>
+                  <input class="form-control" style="width: 200px;">
                 </div>
                 <div class="col" style="margin-right:2%">
-                  <label for="inputPassword4" class="form-label">Data chiusura</label>
-                  <input type="password" class="form-control" id="inputPassword4"style="width: 200px;">
+                  <label  class="form-label"><strong>Data chiusura</strong></label>
+                  <input  class="form-control"style="width: 200px;">
                 </div>
 
               </form>
@@ -190,13 +189,13 @@
                     <option>Default select</option>
                   </select>
                   <br>
-                  <label for="inputEmail4" class="form-label"><strong>Priorità</strong></label>
+                  <label for="inputEmail4" class="form-label"><strong>Gruppo</strong></label>
                   <select class="form-control">
                     <option>Default select</option>
                   </select>
                 </div>
                 <div class="col" style="margin-right:2%">
-                  <label for="inputPassword4" class="form-label"><strong>Stadio</strong></label>
+                  <label for="inputPassword4" class="form-label"><strong>Gestore</strong></label>
                   <select class="form-control">
                     <option>Default select</option>
                   </select>
@@ -212,17 +211,12 @@
                 <thead>
                   <tr>
                     <th scope="col">ID</th>
-                    <th scope="col">Messaggi nuovi</th>
-                    <th scope="col">TICKET RIF</th>
-                    <th scope="col">AZIENDA</th>
-                    <th scope="col">GESTORE</th>
-                    <th scope="col">INIZIO</th>
-                    <th scope="col">DESCRIZIONE</th>
-                    <th scope="col">COMUNE</th>
-                    <th scope="col">STADIO</th>
-                    <th scope="col">TIPOLOGIA</th>
-                    <th scope="col">PROBLEMA PROD</th>
-                    <th scope="col">DATA MOD</th>
+                    <th scope="col">NOME</th>
+                    <th scope="col">DIMENSIONE</th>
+                    <th scope="col">ESTENSIONE</th>
+                    <th scope="col">DATA INSERIMENTO</th>
+                    <th scope="col">DATA SCADENZA</th>
+                   
                   </tr>
                 </thead>
                 <tbody>                    
@@ -234,7 +228,7 @@
               </form>
               <br>
               <form>
-                <div class="form-group" style="margin-left:1%">
+                <div class="form-group" style="margin-left:1%;margin-right:2%;">
                   <label for="exampleInputEmail1"><strong>Nuovo aggiornamento</strong></label>
                   <input  class="form-control">
                  
@@ -246,8 +240,8 @@
               
               <div class="row">
         
-                <div class="col">
-                  <label for="inputEmail4" class="form-label"><strong>aggiornamenti precedenti</strong></label>
+                <div class="col"style="margin-left:1%">
+                  <label  class="form-label"><strong>aggiornamenti precedenti</strong></label>
                   <div class="card w-75">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
@@ -255,41 +249,69 @@
                     </div>
                   </div>
 
-                  <label for="inputEmail4" class="form-label"></label>
+                  
                     <div class="card w-75">
                       <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>              
                       </div>
                     </div>
+                    
                 </div>
-                <div class="col">
-                  <label for="inputPassword4" class="form-label"><strong>Intro email</strong></label>
-                  <select class="form-control">
-                    <option>Default select</option>
-                  </select>
+                <div class="col"style="margin-right:2%;">
+                  <label  class="form-label"><strong>Inoltro email</strong></label>
+                  <input  class="form-control"><br>
                   <div class="d-flex flex-row-reverse">
-                    <button>ciao</button>
+                    
+                    <button>Inoltra email</button>
                   </div>
                   
-                  <br><br>
+                  <br>
 
-                  <label for="inputEmail4" class="form-label"><strong>Chiusura ticket</strong></label>
-                  <select class="form-control">
-                    <option>Default select</option>
-                  </select>
+                  <label  class="form-label"><strong>Chiusura ticket</strong></label>
+                  <input  class="form-control"><br>
                   <div class="d-flex flex-row-reverse">
-                    <button>ciao</button>
-                    <button>ciao</button>
+                    
+                    <button style="margin-left:10px;">Chiudi ticket e invia email</button>
+                    <button>Invia ticket</button>
                   </div>
                   
                   
+                </div>
+                <div class="overflow-auto">
+                  <form>
+                  <div class="col"style="margin-left:1%;width:950px">
+                    <label  class="form-label"><strong>Messaggi</strong></label>
+                  <div class="card w-75">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>           
+                    </div>
+                    
+                  </div>
+                    <button style="margin-left:1%;">Invia</button>
+                    <button style="margin-left:1%;">Allega file</button>
+                    <br>
+                    <br>
+                    <div class="col"style="margin-left:1%">
+                      <label  class="form-label"><strong>aggiornamenti precedenti</strong></label>
+                      <div class="card w-75">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>           
+                        </div>
+                      </div>
+
+                  
+                </form>
                 </div>
                 
                 
                 
                 
               </div>
+                    
+        
    
             </div>   
 
