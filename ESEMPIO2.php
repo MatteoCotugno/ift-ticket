@@ -3,7 +3,7 @@ $file= file_get_contents("./prova2.json");
 $array=[
 
 ];
-
+//sdsa
 $json_decoded = json_decode($file);
 
 foreach($json_decoded as $ticket ){
